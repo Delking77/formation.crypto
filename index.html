@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Complet des Cryptomonnaies</title>
+    <meta name="description" content="Guide complet pour maîtriser les cryptomonnaies : apprenez à acheter, stocker et gérer vos cryptos en 4 semaines avec un bonus sur la fiscalité.">
+    <meta name="keywords" content="cryptomonnaies, crypto, bitcoin, ethereum, formation crypto, guide crypto, fiscalité crypto">
+    <meta name="author" content="Delking77">
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Ajoute un favicon (à créer ou télécharger) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <h1>Guide Complet des Cryptomonnaies</h1>
+        <p>Maîtrisez l’achat, le stockage et la gestion des cryptos en 4 semaines – avec un bonus fiscalité !</p>
+    </header>
+
+    <div class="container" role="main">
+        <div class="section">
+            <h2>Pourquoi suivre cette formation ?</h2>
+            <ul>
+                <li>Découvrez ce qu’est une cryptomonnaie et ses avantages (décentralisation, faibles frais).</li>
+                <li>Protégez vos fonds avec des astuces de sécurité simples et efficaces.</li>
+                <li>Apprenez à choisir les meilleures cryptos et plateformes adaptées à vos besoins.</li>
+                <li>Comprenez la fiscalité et la réglementation pour rester dans les règles.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Votre aventure en 4 semaines</h2>
+            <div class="week-preview">
+                <div class="week-card">
+                    <div class="week-card-inner">
+                        <div class="week-card-front">
+                            <i class="fas fa-coins" aria-label="Icône de pièces de monnaie"></i>
+                            <h3>Semaine 1 : Les bases</h3>
+                            <p>Découvrez les cryptos et sécurisez vos débuts.</p>
+                        </div>
+                        <div class="week-card-back">
+                            <ul>
+                                <li>Qu’est-ce qu’une cryptomonnaie ? Définition et histoire.</li>
+                                <li>Sécurité : mots de passe forts, 2FA.</li>
+                                <li>Choisir un portefeuille sécurisé.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-inner">
+                        <div class="week-card-front">
+                            <i class="fas fa-exchange-alt" aria-label="Icône d’échange"></i>
+                            <h3>Semaine 2 : Choix éclairés</h3>
+                            <p>Comparez cryptos et plateformes.</p>
+                        </div>
+                        <div class="week-card-back">
+                            <ul>
+                                <li>Bitcoin, Ethereum… quelles différences ?</li>
+                                <li>Évaluer les plateformes : sécurité, frais.</li>
+                                <li>Vos besoins : trading ou long terme ?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-inner">
+                        <div class="week-card-front">
+                            <i class="fas fa-wallet" aria-label="Icône de portefeuille"></i>
+                            <h3>Semaine 3 : Votre portefeuille</h3>
+                            <p>Créez et protégez votre wallet.</p>
+                        </div>
+                        <div class="week-card-back">
+                            <ul>
+                                <li>Types de portefeuilles : en ligne, matériel.</li>
+                                <li>Sécuriser vos clés privées.</li>
+                                <li>Éviter les phishing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-inner">
+                        <div class="week-card-front">
+                            <i class="fas fa-shopping-cart" aria-label="Icône de panier"></i>
+                            <h3>Semaine 4 : Achetez malin</h3>
+                            <p>Achetez et gérez les risques.</p>
+                        </div>
+                        <div class="week-card-back">
+                            <ul>
+                                <li>Méthodes : plateformes, P2P.</li>
+                                <li>Gérer la volatilité.</li>
+                                <li>Sécuriser vos achats.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="week-card" style="background: #e6f7e6;">
+                    <div class="week-card-inner">
+                        <div class="week-card-front">
+                            <i class="fas fa-gift" aria-label="Icône de cadeau"></i>
+                            <h3>Bonus : Fiscalité</h3>
+                            <p>Maîtrisez les règles.</p>
+                        </div>
+                        <div class="week-card-back">
+                            <ul>
+                                <li>Déclarer gains et pertes.</li>
+                                <li>Trading vs long terme.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="https://bitpay.com/invoice?id=TON_ID_FACTURE" class="cta-button payment-button" target="_blank">
+                <i class="fas fa-bitcoin"></i> Payer avec Cryptomonnaie (50€)
+            </a>
+            <!-- Bouton d'inscription original (optionnel, à garder ou supprimer) -->
+            <a href="#" class="cta-button" onclick="openModal()">Démarrez votre aventure crypto dès aujourd’hui !</a>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <h2>Inscrivez-vous !</h2>
+            <form id="signupForm" onsubmit="submitForm(event)">
+                <input type="text" id="name" placeholder="Votre nom" required aria-label="Votre nom">
+                <input type="email" id="email" placeholder="Votre email" required aria-label="Votre email">
+                <button type="submit">S’inscrire</button>
+            </form>
+            <p><a href="#" onclick="closeModal()" aria-label="Fermer la fenêtre">Fermer</a></p>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+        <p>© 2025 xAI - Formez-vous aux cryptos avec confiance !</p>
+    </footer>
+
+    <script>
+        function openModal() {
+            document.getElementById('signupModal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('signupModal').style.display = 'none';
+        }
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            if (name && email) {
+                // Remplacer l'alerte par une confirmation plus professionnelle
+                const confirmation = document.createElement('div');
+                confirmation.innerHTML = `
+                    <div class="modal confirmation-modal">
+                        <div class="modal-content">
+                            <h2>Merci, ${name} !</h2>
+                            <p>Vous êtes inscrit avec ${email}. Vous recevrez bientôt des informations supplémentaires.</p>
+                            <button onclick="closeConfirmation()">Fermer</button>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(confirmation);
+            }
+        }
+
+        function closeConfirmation() {
+            const modal = document.querySelector('.confirmation-modal');
+            if (modal) modal.remove();
+        }
+
+        // Placeholder pour l'accès au PDF après paiement (à configurer manuellement ou via API)
+        // Exemple : après paiement via BitPay, tu envoies un email avec un lien sécurisé
+        // function handlePaymentSuccess(email) {
+        //     // Simuler l'envoi d'un email ou redirection (à implémenter avec une API externe)
+        //     alert(`Merci pour votre paiement ! Un lien vers le PDF de la formation a été envoyé à ${email}.`);
+        // }
+    </script>
+</body>
+</html>
