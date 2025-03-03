@@ -78,13 +78,16 @@ body {
     background-color: #FF8C00;
     color: #FFFFFF;
     padding: 15px 40px;
-    border-radius: 25px;
+    border-radius: 0.25rem;
     text-decoration: none;
     font-size: 1.3em;
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
     margin: 10px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.25rem;
 }
 
 .cta-button:hover {
@@ -92,13 +95,26 @@ body {
     transform: scale(1.05);
 }
 
-.payment-button-euro {
-    background-color: #1E90FF; /* Bleu DodgerBlue, cohérent avec ton design */
-    transition: background-color 0.3s ease;
+.pp-4XNMKVY35RSYN {
+    text-align: center;
+    border: none;
+    border-radius: 0.25rem;
+    min-width: 11.625rem;
+    padding: 0 2rem;
+    height: 2.625rem;
+    font-weight: bold;
+    background-color: #1E90FF; /* Ajusté à ton bleu DodgerBlue pour cohérence */
+    color: #FFFFFF; /* Texte blanc pour contraste */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
 }
 
-.payment-button-euro:hover {
-    background-color: #1C86EE; /* Un peu plus sombre au survol */
+.pp-4XNMKVY35RSYN:hover {
+    background-color: #1C86EE; /* Bleu plus sombre au survol */
     transform: scale(1.05);
 }
 
@@ -265,6 +281,12 @@ footer {
     .cta-button {
         font-size: 1em;
         padding: 12px 30px;
+    }
+    .pp-4XNMKVY35RSYN {
+        font-size: 0.9rem;
+        padding: 0 1.5rem;
+        height: 2.25rem;
+        min-width: 10rem; /* Ajusté pour mobile */
     }
     .week-preview {
         grid-template-columns: 1fr;
