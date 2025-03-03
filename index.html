@@ -114,10 +114,9 @@
         </div>
 
         <div class="cta">
-            <a href="https://bitpay.com/invoice?id=TON_ID_FACTURE" class="cta-button payment-button" target="_blank">
-                <i class="fas fa-bitcoin"></i> Payer avec Cryptomonnaie (50€)
+            <a href="https://www.paypal.com/ncp/payment/R6NRH5PP2AGZC" class="cta-button payment-button-euro" target="_blank">
+                <i class="fas fa-euro-sign"></i> Payer avec PayPal (99€)
             </a>
-            <!-- Bouton d'inscription original (optionnel, à garder ou supprimer) -->
             <a href="#" class="cta-button" onclick="openModal()">Démarrez votre aventure crypto dès aujourd’hui !</a>
         </div>
     </div>
@@ -150,14 +149,14 @@
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             if (name && email) {
-                // Remplacer l'alerte par une confirmation plus professionnelle
                 const confirmation = document.createElement('div');
                 confirmation.innerHTML = `
                     <div class="modal confirmation-modal">
                         <div class="modal-content">
                             <h2>Merci, ${name} !</h2>
-                            <p>Vous êtes inscrit avec ${email}. Vous recevrez bientôt des informations supplémentaires.</p>
-                            <button onclick="closeConfirmation()">Fermer</button>
+                            <p>Vous êtes inscrit avec ${email}. Passez au paiement pour accéder à la formation PDF. Après paiement, vous recevrez le lien sécurisé et le code d’accès par email manuellement dans les 24 heures.</p>
+                            <button onclick="window.location.href='https://www.paypal.com/ncp/payment/R6NRH5PP2AGZC'" style="background-color: #1E90FF; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Payer avec PayPal (99€)</button>
+                            <button onclick="closeConfirmation()" style="background-color: #FF8C00; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Fermer</button>
                         </div>
                     </div>
                 `;
@@ -169,13 +168,6 @@
             const modal = document.querySelector('.confirmation-modal');
             if (modal) modal.remove();
         }
-
-        // Placeholder pour l'accès au PDF après paiement (à configurer manuellement ou via API)
-        // Exemple : après paiement via BitPay, tu envoies un email avec un lien sécurisé
-        // function handlePaymentSuccess(email) {
-        //     // Simuler l'envoi d'un email ou redirection (à implémenter avec une API externe)
-        //     alert(`Merci pour votre paiement ! Un lien vers le PDF de la formation a été envoyé à ${email}.`);
-        // }
     </script>
 </body>
 </html>
