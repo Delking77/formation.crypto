@@ -92,13 +92,13 @@ body {
     transform: scale(1.05);
 }
 
-.payment-button {
-    background-color: #32CD32;
+.payment-button-euro {
+    background-color: #1E90FF; /* Bleu DodgerBlue, cohérent avec ton design */
     transition: background-color 0.3s ease;
 }
 
-.payment-button:hover {
-    background-color: #2BAE2B;
+.payment-button-euro:hover {
+    background-color: #1C86EE; /* Un peu plus sombre au survol */
     transform: scale(1.05);
 }
 
