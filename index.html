@@ -114,9 +114,11 @@
         </div>
 
         <div class="cta">
-            <a href="https://www.paypal.com/ncp/payment/R6NRH5PP2AGZC" class="cta-button payment-button-euro" target="_blank">
-                <i class="fas fa-euro-sign"></i> Payer avec PayPal (99€)
-            </a>
+            <form action="https://www.paypal.com/ncp/payment/4XNMKVY35RSYN" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+                <input class="pp-4XNMKVY35RSYN" type="submit" value="Payer avec PayPal" />
+                <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cartes acceptées" style="max-width:100px;" />
+                <section>Optimisé par <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" style="height:0.875rem;vertical-align:middle;"/></section>
+            </form>
             <a href="#" class="cta-button" onclick="openModal()">Démarrez votre aventure crypto dès aujourd’hui !</a>
         </div>
     </div>
@@ -155,7 +157,7 @@
                         <div class="modal-content">
                             <h2>Merci, ${name} !</h2>
                             <p>Vous êtes inscrit avec ${email}. Passez au paiement pour accéder à la formation PDF. Après paiement, vous recevrez le lien sécurisé et le code d’accès par email manuellement dans les 24 heures.</p>
-                            <button onclick="window.location.href='https://www.paypal.com/ncp/payment/R6NRH5PP2AGZC'" style="background-color: #1E90FF; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Payer avec PayPal (99€)</button>
+                            <button onclick="window.location.href='https://www.paypal.com/ncp/payment/4XNMKVY35RSYN'" style="background-color: #1E90FF; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Payer avec PayPal (99€)</button>
                             <button onclick="closeConfirmation()" style="background-color: #FF8C00; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Fermer</button>
                         </div>
                     </div>
