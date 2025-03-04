@@ -150,24 +150,9 @@
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             if (name && email) {
-                const confirmation = document.createElement('div');
-                confirmation.innerHTML = `
-                    <div class="modal confirmation-modal">
-                        <div class="modal-content">
-                            <h2>Merci, ${name} !</h2>
-                            <p>Vous êtes inscrit avec ${email}. Scannez le QR code PayPal sur notre site pour payer 99 € et accéder à la formation PDF. Après paiement, vous recevrez le lien sécurisé et le code d’accès par email manuellement dans les 24 heures.</p>
-                            <button onclick="window.location.href='#paypal-qr'" style="background-color: #1E90FF; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Voir le QR code</button>
-                            <button onclick="closeConfirmation()" style="background-color: #FF8C00; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px;">Fermer</button>
-                        </div>
-                    </div>
-                `;
-                document.body.appendChild(confirmation);
+                // Redirection vers Google Forms avec les champs pré-remplis
+                window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSf.../viewform?entry.123456789=' + encodeURIComponent(name) + '&entry.987654321=' + encodeURIComponent(email);
             }
-        }
-
-        function closeConfirmation() {
-            const modal = document.querySelector('.confirmation-modal');
-            if (modal) modal.remove();
         }
     </script>
 </body>
